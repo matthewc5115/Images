@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SniffGo Images</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <img src="/Images/SniffGo-Images-4-3-2026.png" alt="SniffGo Logo" class="logo" />
+      <div id="auth-area" class="auth-area">
+        <button id="github-signin" class="btn">Sign in with GitHub</button>
+        <div id="signed-in" class="hidden">
+          <span id="username-display"></span>
+          <button id="signout" class="btn btn-secondary">Sign out</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="upload-section">
+      <label for="file-upload" class="btn btn-primary" id="upload-label">Upload Image</label>
+      <input type="file" id="file-upload" accept="image/*" multiple />
+      <p id="status" class="status"></p>
+    </section>
+
+    <section class="gallery-section">
+      <h2>Your Images</h2>
+      <div id="gallery" class="gallery"></div>
+      <p id="no-images" class="hint hidden">No images yet. Upload one after you sign in.</p>
+    </section>
+
+    <section class="help">
+        <h2>How to Use</h2>
+        <ol>
+            <li>Click "Sign in with GitHub" to authenticate.</li>
+            <li>Once signed in, click "Upload Image" to select images from your device.</li>
+            <li>Your uploaded images will appear in the gallery below.</li>
+            <li>You can sign out at any time using the "Sign out" button.</li>
+        </ol>
+    </section>
+  </div>
+<h4>&copy; 2026 SniffGo. All rights reserved.</h4>
+  <script src="script.js"></script>
+</body>
+</html>
